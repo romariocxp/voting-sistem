@@ -32,12 +32,14 @@ export default {
     <div>
     </div>
     <div class="comments">
-        <ul>
-            <li v-for="(comment, index) in comments">
+        <ul class="list-group">
+            <li v-for="(comment, index) in comments" class="list-group-item d-flex justify-content-between align-items-center">
                 <span>{{ comment.name }}</span>
                 <span>{{ comment.comment }}</span>
-                <span>{{ comment.votes }}</span>
-                <button @click="voteComment(comment)">vote</button>
+                <span class="badge bg-primary rounded-pill"> {{ comment.votes }}</span>   
+                <button @click="voteComment(comment)" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-circle-arrow-upt" aria-hidden="true">Vote</span>
+</button>
             </li>
         </ul>
     </div>
@@ -73,7 +75,7 @@ button {
 
 input {
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
     padding: 0.5rem;
     width: 100%;
 }
