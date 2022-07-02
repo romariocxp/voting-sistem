@@ -4,9 +4,9 @@ export default {
         return {
             comments: [],
             comment: {
-                name: '',
-                comment: '',
-                votes: 0,
+                name: ' ',
+                comment: ' ',
+                votes: ' 0 ',
             }
         }
     },
@@ -17,9 +17,9 @@ export default {
         },
         cleanPreviousComments(){
             this.comment = {
-                name: '',
-                comment: '',
-                votes: 0,
+                name: ' ',
+                comment: ' ',
+                votes: ' 0 ',
             }
         },
         voteComment(comment) {
@@ -54,6 +54,7 @@ export default {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
+    
 }
 
 li {
@@ -62,14 +63,17 @@ li {
 
 button {
     border: none;
-    color: #000;
-    font-size: 1rem;
+    color: rgb(0,0,0);
+    font-size: 16px;
+    font-family: "Lucida Console", "Courier New", monospace;
     cursor: pointer;
+    background: rgb(95, 62, 255);
+    align: center;
 }
 
 input {
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     padding: 0.5rem;
     width: 100%;
 }
