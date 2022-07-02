@@ -5,7 +5,6 @@ import Comments from "@/components/Comments.vue";
 <template>
     <div class="wrapper">
       <Comments />
-
     </div>
 </template>
 
