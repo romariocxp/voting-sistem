@@ -16,6 +16,8 @@ import Comments from "@/components/Comments.vue";
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  position: absolute;
+  right: 60px;
 }
 
 header {
@@ -70,12 +72,6 @@ nav a:first-of-type {
   body {
     display: flex;
     place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 
   header {
